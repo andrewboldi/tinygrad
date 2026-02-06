@@ -4,7 +4,8 @@ from tinygrad.tensor import Tensor
 from tinygrad.dtype import dtypes
 from tinygrad.device import is_dtype_supported
 from tinygrad.helpers import prod, make_tuple, flatten, USE_ATOMICS
-from tinygrad.nn import optim, state, datasets  # noqa: F401
+from tinygrad.nn import optim, state, datasets, distributed  # noqa: F401
+from tinygrad.nn.distributed import FSDP, FSDPOptimizer, shard_module  # noqa: F401
 
 class BatchNorm:
   """
