@@ -66,3 +66,9 @@ target
 .mypy_cache
 mutants
 .mutmut-cache
+
+# Gas Town (added by gt)
+.runtime/
+.claude/
+.logs/
+.beads/
